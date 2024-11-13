@@ -112,7 +112,7 @@ const MainPage = ({ sessionId, setSessionId }: MainPageProps) => {
   const handleSearch = async () => {
     try {
       const response = await fetch(
-        `http://localhost:5001/api/songs/search?query=${searchQuery}`
+        `https://jamoveo-backend-q7fv.onrender.com//api/songs/search?query=${searchQuery}`
       );
       const data = await response.json();
       setResults(data);
@@ -135,7 +135,7 @@ const MainPage = ({ sessionId, setSessionId }: MainPageProps) => {
       const user = auth.currentUser;
       if (!user) return;
 
-      const response = await fetch("http://localhost:5001/api/session/create", {
+      const response = await fetch("https://jamoveo-backend-q7fv.onrender.com//api/session/create", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ userId: user.uid, songId: selectedSong.id }),
