@@ -6,7 +6,7 @@ JaMoveo is a web application designed to help the Moveo band collaborate seamles
 
 ## Tech Stack
 - **Frontend**: React (TypeScript)
-- **Styling**: Custom, responsive styling for easy readability in low-light, smoke-filled rehearsal environments
+- **Styling**: Material UI for responsive and accessible design, ensuring readability in low-light, smoke-filled rehearsal environments
 
 ## Installation and Setup
 1. Clone the repository.
@@ -27,10 +27,11 @@ JaMoveo is a web application designed to help the Moveo band collaborate seamles
 
 ## Usage Instructions
 1. **Admin**:
-   - Log in through the provided [Admin Login URL](https://jamoveo-backend-q7fv.onrender.com/login).
+   - Register as an admin at [Admin Signup URL](https://jamoveo-backend-q7fv.onrender.com/signup/admin) and then log in.
    - Start a new session by selecting songs from the search results and initiating the Live Page for all users.
 2. **Player**:
-   - Log in as a regular user to be directed to the waiting screen, and once a song is selected, view the song details based on the assigned role.
+   - Register as a user at [User Signup URL](https://jamoveo-backend-q7fv.onrender.com/signup) and log in to be directed to the waiting screen.
+   - Once a song is selected, view the song details based on the assigned role.
 
 ## Deployment
 The frontend is deployed via Render.
