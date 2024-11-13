@@ -66,7 +66,7 @@ const LivePage = ({ sessionId, setSessionId }: LivePageProps) => {
 
             if (sessionData?.songId) {
               const response = await fetch(
-                `https://jamoveo-backend-q7fv.onrender.com//api/songs/${sessionData.songId}?instrument=${instrument}`
+                `https://jamoveo-backend-q7fv.onrender.com/api/songs/${sessionData.songId}?instrument=${instrument}`
               );
               const songContent = await response.json();
 
@@ -154,7 +154,7 @@ const LivePage = ({ sessionId, setSessionId }: LivePageProps) => {
 
   const handleQuit = async () => {
     if (sessionId.length) {
-      await fetch("https://jamoveo-backend-q7fv.onrender.com//api/session/quit", {
+      await fetch("https://jamoveo-backend-q7fv.onrender.com/api/session/quit", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

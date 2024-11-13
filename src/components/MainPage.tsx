@@ -112,7 +112,7 @@ const MainPage = ({ sessionId, setSessionId }: MainPageProps) => {
   const handleSearch = async () => {
     try {
       const response = await fetch(
-        `https://jamoveo-backend-q7fv.onrender.com//api/songs/search?query=${searchQuery}`
+        `https://jamoveo-backend-q7fv.onrender.com/api/songs/search?query=${searchQuery}`
       );
       const data = await response.json();
       setResults(data);
