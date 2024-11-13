@@ -1,0 +1,88 @@
+:root {
+    --primary-color: #1a1a1a;
+    --text-color: #ffffff;
+    --accent-color: #ffd700;
+    --button-color: #4CAF50;
+    --button-hover: #45a049;
+}
+
+body {
+    color: var(--text-color);
+    font-family: 'Arial', sans-serif;
+}
+
+.main-page {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.search-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #333;
+    color: var(--text-color);
+}
+
+.search-button,
+.create-session-button,
+.auto-scroll-button,
+.quit-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--button-color);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: var(--button-hover);
+}
+
+.song-content {
+    font-family: 'Courier New', monospace;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.controls {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.scroll-speed-slider {
+    width: 100px;
+}
+
+.waiting {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.quit-button {
+    background-color: #ff4444;
+}
+
+.quit-button:hover {
+    background-color: #cc0000;
+}
